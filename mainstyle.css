@@ -92,6 +92,8 @@ img {
   background-color: #FFFFFF;
   height: 50px;
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .middletextheader {
