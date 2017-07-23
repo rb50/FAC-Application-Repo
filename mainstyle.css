@@ -37,9 +37,6 @@ img {
   padding-right: 4.04%;
   margin: 0px;
   border-radius : 125px;
-
-
-
 }
 
 #initial {
@@ -59,22 +56,15 @@ img {
 #third  {
   background-color: #66AB8C;
   padding: 0px;
+  padding-bottom: 50px;
   margin: 0px;
-  height: 590px;
 }
 
-#fourth {
+
+#fourth, #fifth {
   background-color: #FA7C92;
   padding: 0px;
   margin: 0px;
-  height: 700px;
-}
-
-#fifth {
-  background-color: #FA7C92;
-  padding: 0px;
-  margin: 0px;
-  height: 1000px;
 }
 
 
@@ -82,7 +72,6 @@ img {
   background-color: #6EC4DB;
   padding: 0px;
   margin: 0px;
-  height: 450px;
 }
 
 #banner {
@@ -135,4 +124,23 @@ li {
   padding: 0px;
   margin: 0px;
   border-radius: 0px;
+}
+
+#menu {
+  display: inline-block;
+  text-align: right;
+  float: right;
+}
+
+@media screen and (max-width: 800px) {
+    #menu {
+        display: none;
+    }
+}
+
+.clearfix::after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
 }
