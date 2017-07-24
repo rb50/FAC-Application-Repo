@@ -144,3 +144,38 @@ li {
    height: 0;
    clear: both;
 }
+
+a:link {
+    color: blue;
+}
+
+
+a:visited {
+    color: purple;
+}
+
+
+a:hover {
+    color: red;
+}
+
+#banner a:link {
+    color: black;
+}
+
+
+#banner a:visited {
+    color: purple;
+}
+
+
+#banner a:hover {
+    color: red;
+}
+
+
+
+
+
+
+}
