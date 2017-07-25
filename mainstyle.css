@@ -39,11 +39,36 @@ img {
   border-radius : 125px;
 }
 
+
+li {
+  list-style-type: square;
+  list-style-position: inside;
+  line-height: 2.5em;
+}
+
+a:link {
+    color: blue;
+}
+
+
+a:visited {
+    color: purple;
+}
+
+
+a:hover {
+    color: red;
+}
+
 #initial {
   background-color: #FA7C92;
   padding: 0px;
   margin: 0px;
   height: 20%;
+}
+
+#initial img {
+  width: 24.55%;
 }
 
 #second {
@@ -74,6 +99,10 @@ img {
   margin: 0px;
 }
 
+#sixth img {
+  width: 24.55%;
+}
+
 #seventh {
   background-color: #6EC4DB;
   padding: 0px;
@@ -89,81 +118,6 @@ img {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.middletextheader {
-  padding-top: 10%;
-  padding-bottom: 10%;
-  font-weight: bold;
-  text-align: center;
-  font-size: 60px;
-
-}
-
-#welcomepara {
-
-  padding-bottom: 10%;
-  padding-left: 20%;
-  padding-right: 20%;
-  font-weight: bold;
-  text-align: center;
-
-}
-
-.Vegfood {
-  padding-left: 30%;
-
-}
-
-li {
-  list-style-type: square;
-  list-style-position: inside;
-  line-height: 2.5em;
-}
-
-#catphototext {
-  padding-right: 35%;
-}
-
-.largephotos {
-  border: none;
-  padding: 0px;
-  margin: 0px;
-  border-radius: 0px;
-  width: 50%;
-}
-
-#menu {
-  display: inline-block;
-  text-align: right;
-  float: right;
-}
-
-@media screen and (max-width: 800px) {
-    #menu {
-        display: none;
-    }
-}
-
-.clearfix::after {
-   content: " ";
-   display: block;
-   height: 0;
-   clear: both;
-}
-
-a:link {
-    color: blue;
-}
-
-
-a:visited {
-    color: purple;
-}
-
-
-a:hover {
-    color: red;
 }
 
 #banner a:link {
@@ -184,12 +138,23 @@ a:hover {
   display: inline-block;
 }
 
-#initial img {
-  width: 24.55%;
+#welcomepara {
+  padding-bottom: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-weight: bold;
+  text-align: center;
+
 }
 
-#sixth img {
-  width: 24.55%;
+#catphototext {
+  padding-right: 35%;
+}
+
+#menu {
+  display: inline-block;
+  text-align: right;
+  float: right;
 }
 
 #lentilmeal {
@@ -206,4 +171,39 @@ a:hover {
 #yogapara {
   padding-top: 125px;
   margin: 0px;
+}
+
+.middletextheader {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 60px;
+
+}
+
+.Vegfood {
+  padding-left: 30%;
+
+}
+
+.largephotos {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 0px;
+  width: 50%;
+}
+
+.clearfix::after {
+   content: " ";
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+@media screen and (max-width: 800px) {
+    #menu {
+        display: none;
+    }
 }
