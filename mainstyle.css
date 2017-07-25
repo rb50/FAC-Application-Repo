@@ -74,6 +74,12 @@ img {
   margin: 0px;
 }
 
+#seventh {
+  background-color: #6EC4DB;
+  padding: 0px;
+  margin: 0px;
+}
+
 #banner {
   position: fixed;
   top: 0px;
@@ -171,11 +177,4 @@ a:hover {
 
 #banner a:hover {
     color: red;
-}
-
-
-
-
-
-
 }
