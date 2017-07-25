@@ -130,6 +130,7 @@ li {
   padding: 0px;
   margin: 0px;
   border-radius: 0px;
+  width: 50%;
 }
 
 #menu {
@@ -177,4 +178,32 @@ a:hover {
 
 #banner a:hover {
     color: red;
+}
+
+#banner h1, h2 {
+  display: inline-block;
+}
+
+#initial img {
+  width: 24.55%;
+}
+
+#sixth img {
+  width: 24.55%;
+}
+
+#lentilmeal {
+  width: 20%;
+  float: left;
+  margin: 0px;
+}
+
+#puddingcat {
+  float: right;
+  width: 20%;
+}
+
+#yogapara {
+  padding-top: 125px;
+  margin: 0px;
 }
