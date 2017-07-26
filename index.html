@@ -8,25 +8,46 @@
       <script type = "text/javascript">
 
         function changeImage() {
-              if (x === 1) {
-                  x = 0;
-              } else {
+
+              if (x === 0) {
                   x = 1;
+                  y = 3;
+                  z = 5;
+              } else if (x === 1) {
+                  x = x + 1;
+                  y = y + 1;
+                  z = 0;
+              } else if (x === 2) {
+                  x = x + 1;
+                  y = y + 1;
+                  z = z + 1;
+              } else {
+                  x = 0;
+                  y = 2;
+                  z = 4;
               }
-              document.getElementById("guitarchange").src = guitarImages[x];
-              document.getElementById("vegfoodchange").src = vegFoodImages[x];
-              document.getElementById("coffeecupchange").src = coffeeImages[x];
+
+              if (counter % 2 == 0) {
+                document.getElementById("guitarchange2").src = images[x];
+                document.getElementById("vegfoodchange2").src = images[y];
+                document.getElementById("coffeecupchange2").src = images[z];
+              } else {
+
+                document.getElementById("guitarchange").src = images[x];
+                document.getElementById("vegfoodchange").src = images[y];
+                document.getElementById("coffeecupchange").src = images[z];
+              }
+          counter++;
         }
 
-
         function timer() {
-              setInterval(changeImage, 2000);
+              setInterval(changeImage, 5000);
           }
 
-        var guitarImages = ["images/guitarphoto.jpg","images/guitarphoto2.jpg"];
-        var vegFoodImages = ["images/coffeecup.jpg","images/coffeecup2.jpg"];
-        var coffeeImages = ["images/vegfood.jpg","images/vegfood2.jpg"];
+        var images = ["images/guitarphoto.jpg","images/guitarphoto2.jpg","images/coffeecup.jpg","images/coffeecup2.jpg","images/vegfood.jpg","images/vegfood2.jpg"];
+
         var x = 0;
+        counter = 1;
 
 
       </script>
@@ -44,10 +65,21 @@
       </div>
 
       <div id="initial">
-        <img src="images/coffeecup.jpg" alt="coffee cup" id="coffeecupchange" class="fadeOut" />
-        <img src="images/vegfood.jpg" alt="vegetarian food" id="vegfoodchange" class="fadeOut"/>
-        <img src="images/guitarphoto.jpg" alt="guitar" id="guitarchange" class="fadeOut"/>
+        <span style="position: relative;">
+
+        <img src="images/coffeecup.jpg" class="top" alt="coffee cup" id="coffeecupchange" style="position: absolute; top 0; left 0; width: 75.0%"/>
+        <img src="images/coffeecup2.jpg" alt="coffee cup" id="coffeecupchange2" />
+      </span>
+      <span style="position: relative">
+        <img src="images/vegfood.jpg" class="top" alt="vegetarian food" id="vegfoodchange" style="position: absolute; top 0; left 0; width: 75.0%"/>
+        <img src="images/vegfood2.jpg" alt="vegetarian food" id="vegfoodchange2" />
+      </span>
+      <span style="position: relative">
+        <img src="images/guitarphoto.jpg" class="top" alt="guitar" id="guitarchange" style="position: absolute; top 0; left 0; width: 75.1%"/>
+        <img src="images/guitarphoto2.jpg" alt="guitar" id="guitarchange2" />
+      </span>
       </div>
+
 
       <div id="second">
         <h1 class="middletextheader">Welcome</h1>
