@@ -5,9 +5,34 @@
       <link type="text/css" rel="stylesheet" href="mainstyle.css">
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
       <link rel="icon" href="images/beckyphoto.jpg">
+      <script type = "text/javascript">
+
+        function changeImage() {
+              if (x === 1) {
+                  x = 0;
+              } else {
+                  x = 1;
+              }
+              document.getElementById("guitarchange").src = guitarImages[x];
+              document.getElementById("vegfoodchange").src = vegFoodImages[x];
+              document.getElementById("coffeecupchange").src = coffeeImages[x];
+        }
+
+
+        function timer() {
+              setInterval(changeImage, 2000);
+          }
+
+        var guitarImages = ["images/guitarphoto.jpg","images/guitarphoto2.jpg"];
+        var vegFoodImages = ["images/coffeecup.jpg","images/coffeecup2.jpg"];
+        var coffeeImages = ["images/vegfood.jpg","images/vegfood2.jpg"];
+        var x = 0;
+
+
+      </script>
     </head>
 
-    <body>
+    <body onload = "timer()">
       <div id="banner">
         <h1>RBotha</h1>
         <div id="menu">
@@ -19,9 +44,9 @@
       </div>
 
       <div id="initial">
-        <img src="images/coffeecup.jpg" alt="coffee cup" />
-        <img src="images/vegfood.jpg" alt="vegetarian food" />
-        <img src="images/guitarphoto.jpg" alt="guitar" />
+        <img src="images/coffeecup.jpg" alt="coffee cup" id="coffeecupchange" />
+        <img src="images/vegfood.jpg" alt="vegetarian food" id="vegfoodchange" />
+        <img src="images/guitarphoto.jpg" alt="guitar" id="guitarchange" />
       </div>
 
       <div id="second">
