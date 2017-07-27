@@ -10,15 +10,15 @@
         function changeImage() {
 
               if (x === 0) {
-                  x = 1;
+                  x = 4;
                   y = 3;
                   z = 5;
-              } else if (x === 1) {
+              } else if (x === 4) {
                   x = x + 1;
                   y = y + 1;
                   z = 0;
-              } else if (x === 2) {
-                  x = x + 1;
+              } else if (x === 5) {
+                  x = 3;
                   y = y + 1;
                   z = z + 1;
               } else {
@@ -47,7 +47,7 @@
         var images = ["images/guitarphoto.jpg","images/guitarphoto2.jpg","images/coffeecup.jpg","images/coffeecup2.jpg","images/vegfood.jpg","images/vegfood2.jpg"];
 
         var x = 0;
-        counter = 1;
+        var counter = 1;
 
 
       </script>
@@ -65,20 +65,19 @@
       </div>
 
       <div id="initial">
-        <span style="position: relative;">
-
-        <img src="images/coffeecup.jpg" class="top" alt="coffee cup" id="coffeecupchange" style="position: absolute; top 0; left 0; width: 75.0%"/>
-        <img src="images/coffeecup2.jpg" alt="coffee cup" id="coffeecupchange2" />
+       <span style="position: relative;">
+        <img src="images/coffeecup.jpg" class="top" alt="coffee cup1" id="coffeecupchange" style="position: absolute; top 0; left 0; width: 75.0%" />
+        <img src="images/coffeecup2.jpg" alt="coffee cup2" id="coffeecupchange2" />
       </span>
-      <span style="position: relative">
-        <img src="images/vegfood.jpg" class="top" alt="vegetarian food" id="vegfoodchange" style="position: absolute; top 0; left 0; width: 75.0%"/>
+       <span style="position: relative">
+        <img src="images/vegfood.jpg" class="top" alt="vegetarian food" id="vegfoodchange" style="position: absolute; top 0; left 0; width: 75.0%" />
         <img src="images/vegfood2.jpg" alt="vegetarian food" id="vegfoodchange2" />
       </span>
-      <span style="position: relative">
-        <img src="images/guitarphoto.jpg" class="top" alt="guitar" id="guitarchange" style="position: absolute; top 0; left 0; width: 75.1%"/>
+       <span style="position: relative">
+        <img src="images/guitarphoto.jpg" class="top" alt="guitar" id="guitarchange" style="position: absolute; top 0; left 0; width: 75.1%" />
         <img src="images/guitarphoto2.jpg" alt="guitar" id="guitarchange2" />
       </span>
-      </div>
+     </div>
 
 
       <div id="second">
@@ -91,8 +90,6 @@
         <br>
         <br>
         <img src="images/lentils.jpg" alt="lentil meal" id="lentilmeal" />
-
-
         <p class="vegfood">I love vegetarian food, experimenting with recipes and creating new versions of dishes I enjoy.</p>
         <img src="images/puddingcat.jpg" alt="pudding cat" id="puddingcat" />
         <p class="vegfood">Here are a selection of some of my favourites:</p>
@@ -127,9 +124,7 @@
          <a id="yoga">
          <img src="images/pixelyoga.png" alt="yoga" style="float: left;" />
          </a>
-
          <p id="yogapara">I've been practising yoga for a couple of years, and more recently have started a daily yoga routine. My favourite online resources are "Yoga with Adrienne" online classes. My cat has also been known to join in too!</p>
-
          <p>Visit <a href="http://yogawithadriene.com/" target="_blank">Yoga with Adriene</a> for awesome yoga videos!</p>
 
        </div>
