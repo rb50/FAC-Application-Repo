@@ -8,7 +8,7 @@
       <script type = "text/javascript">
 
         function changeImage() {
-
+          
               if (x === 0) {
                   x = 4;
                   y = 3;
@@ -42,10 +42,12 @@
 
         function timer() {
               var firefox  = navigator.userAgent.indexOf('Firefox') > -1;
-              if (!firefox){
-                document.getElementById("guitarchange").style.display = 'inline-block';
-                document.getElementById("vegfoodchange").style.display = 'inline-block';
-                document.getElementById("coffeecupchange").style.display = 'inline-block';
+              if (firefox){
+                document.getElementById("guitarchange").style.display = 'none';
+                document.getElementById("vegfoodchange").style.display = 'none';
+                document.getElementById("coffeecupchange").style.display = 'none';
+                setInterval(changeImage, 5000);
+              } else {
                 setInterval(changeImage, 5000);
               }
 
@@ -73,15 +75,15 @@
 
       <div id="initial">
        <span style="position: relative;">
-        <img src="images/coffeecup.png" class="top" alt="coffee cup1" id="coffeecupchange" style="position: absolute; top 0; left 0; width: 75.0%; display: none" />
+        <img src="images/coffeecup.png" class="top" alt="coffee cup1" id="coffeecupchange" style="position: absolute; top 0; left 0; width: 75.0%; " />
         <img src="images/coffeecup2.png" alt="coffee cup2" id="coffeecupchange2" />
       </span>
        <span style="position: relative">
-        <img src="images/vegfood.png" class="top" alt="vegetarian food" id="vegfoodchange" style="position: absolute; top 0; left 0; width: 75.0%; display: none" />
+        <img src="images/vegfood.png" class="top" alt="vegetarian food" id="vegfoodchange" style="position: absolute; top 0; left 0; width: 75.0%; " />
         <img src="images/vegfood2.png" alt="vegetarian food" id="vegfoodchange2" />
       </span>
        <span style="position: relative">
-        <img src="images/guitarphoto.png" class="top" alt="guitar" id="guitarchange" style="position: absolute; top 0; left 0; width: 75.1%; display: none" />
+        <img src="images/guitarphoto.png" class="top" alt="guitar" id="guitarchange" style="position: absolute; top 0; left 0; width: 75.1%; " />
         <img src="images/guitarphoto2.png" alt="guitar" id="guitarchange2" />
       </span>
      </div>
