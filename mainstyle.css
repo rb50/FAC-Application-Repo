@@ -36,7 +36,7 @@ img {
   padding-left: 4.04%;
   padding-right: 4.04%;
   margin: 0px;
-  border-radius: 125px;
+  /*border-radius: 125px;*/
 }
 
 
@@ -162,11 +162,13 @@ a:hover {
   width: 20%;
   float: left;
   margin: 0px;
+  border-radius: 125px;
 }
 
 #puddingcat {
   float: right;
   width: 20%;
+  border-radius: 125px;
 }
 
 #yogapara {
@@ -177,6 +179,7 @@ a:hover {
 .middletextheader {
   padding-top: 10%;
   padding-bottom: 10%;
+  padding-left: 0px;
   font-weight: bold;
   text-align: center;
   font-size: 60px;
